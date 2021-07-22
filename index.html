@@ -9,11 +9,20 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/6fedced9fe.js" crossorigin="anonymous"></script>
-    <script src="render.js" defer></script>
+    <script src="./js/render.js" defer></script>
+    <script src="./js/settings.js" defer></script>
+    <script src="./js/GameViewHandler.js" defer></script>
     <title>Minesweeper</title>
   </head>
   <body onload="draw()">
-    <header class="text-center pb-1"><h1>Minesweeper</h1></header>
+    <header class="text-center pb-1">
+      <h1>Minesweeper</h1>
+      <select name="difficulty" id="gameDifficulty">
+        <option value="0" selected>Easy</option>
+        <option value="1">Medium</option>
+        <option value="2">Hard</option>
+      </select>
+    </header>
     <div class="app container center">
         <canvas id="game" width="600" height="600">
             
