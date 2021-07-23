@@ -33,12 +33,6 @@ function Settings(){
         this.difficulty = difficulty;
         this.Size = this.getSize();
     }
-    this.on = function(eventName,  func){
-        if(eventName === "changeDifficulty"){
-            document.querySelector("#gameDifficulty").onchange = func;
-            console.log(this.Size);
-        }   
-    }
     this.difficulty = "easy";
     this.Size = this.getSize();
 }

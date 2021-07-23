@@ -8,8 +8,8 @@ function draw(){
     drawField(ctx);
 }
 function drawField(ctx){
-    let countWidth = (600) / 30
-    let countHeight = (600) / 30
+    let countWidth = (canvas.width) / 30
+    let countHeight = (canvas.height) / 30
 
     let lightFirst = true;
     for(let y = 0; y < countHeight; y++){

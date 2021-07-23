@@ -1,7 +1,10 @@
 let settings = new Settings();
 
-settings.difficultyBind("#gameDifficulty");
+settings.difficultyBind("#gameDifficulty")
 
-settings.on("changeDifficulty", () =>{
-    console.log("HelloWorld")
-})
+function initGame(){
+    canvas.width = 30 * settings.Size.x;
+    canvas.height = 30 * settings.Size.y;
+    draw();
+}
+
